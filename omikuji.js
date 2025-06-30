@@ -9,9 +9,11 @@ omikujiButton.addEventListener(
   () => {
     const randomIndex = Math.floor(Math.random() * result.length);
     const resultText = result[randomIndex];
+    console.log(resultText);
     const resultDivision = document.querySelector("#result-area");
-    if (document.querySelector("#result-area p")){
-      resultDivision.textContent = resultText;
+    const resultPar = document.querySelector("#result-area p");
+    if (resultPar){
+      resultPar.textContent = resultText;
     } else {
       const newPar = document.createElement("p");
       newPar.textContent = resultText;
