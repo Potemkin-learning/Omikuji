@@ -9,7 +9,6 @@ omikujiButton.addEventListener(
   () => {
     const randomIndex = Math.floor(Math.random() * result.length);
     const resultText = result[randomIndex];
-    console.log(resultText);
     const resultDivision = document.querySelector("#result-area");
     const resultPar = document.querySelector("#result-area p");
     if (resultPar){
