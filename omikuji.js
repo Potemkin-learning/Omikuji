@@ -9,14 +9,7 @@ omikujiButton.addEventListener(
   () => {
     const randomIndex = Math.floor(Math.random() * result.length);
     const resultText = result[randomIndex];
-    const resultDivision = document.querySelector("#result-area");
-    const resultPar = document.querySelector("#result-area p");
-    if (resultPar){
-      resultPar.textContent = resultText;
-    } else {
-      const newPar = document.createElement("p");
-      newPar.textContent = resultText;
-      resultDivision.append(newPar);
-    }
+    const resultPar = document.querySelector("#result-text");
+    resultPar.textContent = resultText;
   }
 );
